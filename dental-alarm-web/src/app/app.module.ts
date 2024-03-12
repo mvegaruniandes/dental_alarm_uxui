@@ -8,6 +8,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { RecoverComponent } from './recover/recover.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderLoginComponent } from './header-login/header-login.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { AppointmentsComponent } from './appointments/appointments.component';
     LoginComponent,
     RegisterComponent,
     RecoverComponent,
-    AppointmentsComponent
+    AppointmentsComponent,
+    HeaderComponent,
+    FooterComponent,
+    HeaderLoginComponent
   ],
   imports: [
     BrowserModule,

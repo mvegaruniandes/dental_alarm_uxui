@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url('../assets/fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../assets/fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Definir tus propias variables de color
+$primary-color: #3E9BFF; // Ejemplo de color primario personalizado
+$secondary-color: #007BFF; // Ejemplo de color secundario personalizado
+$white-color: #FFFFFF;
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+a {
+  color: $secondary-color !important;
+  font-size: 16px;
+  font-family: 'Roboto-Light';
+}
+
+input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid $secondary-color;
+  border-radius: 0 !important;
+  font-weight: lighter;
+  font-size: 20px;
+  font-family: 'Roboto-Thin';
+}
+
+.bg-custom{
+  background-color: $primary-color !important;
+}
+
+.custom-container {
+  max-width: 639px;
+  /* Ancho máximo */
+  margin: 0 auto;
+  /* Centrar el contenido horizontalmente */
+  border: 1px solid $secondary-color;
+  border-radius: 9px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.40);
+  overflow: hidden;
+}
+
+.logo-container {
+  background-color: $primary-color;
+  height: 153px;
+  text-align: center;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  overflow: hidden;
+  margin-left: -20px;
+  margin-top: -20px;
+  width: 639px;
+  vertical-align: middle;
+}
+
+.logo-container img {
+  vertical-align: middle;
+}
+
+h4{
+  color: $primary-color !important;
+  font-size: 34px !important;
+}
+
+.center{
+  text-align: center;
+}
+
+.button-primary{
+  background-color: $secondary-color !important;
+  width: 167px;
+  height: 41px;
+  color: $white-color;
+  border-radius: 5px;
+  border-style: none;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+.button-primary:hover {
+  background-color: $primary-color !important;
+  width: 167px;
+  height: 41px;
+  color: $white-color;
+  border-radius: 5px;
+  border-style: none;
+  border: none;
+}
+
+.thin-text{
+ font-family: 'Roboto-Light';
+}

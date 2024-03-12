@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-appointments',
   templateUrl: './appointments.component.html',
-  styleUrls: ['./appointments.component.scss']
+  styleUrls: ['./appointments.component.scss'],
 })
-export class AppointmentsComponent {
+export class AppointmentsComponent implements OnInit {
+  appointments: any;
 
+  constructor(public dataService: DataService) {}
+
+  ngOnInit() {
+    this.appointments = this.dataService.getAppointments();
+  }
 }
