@@ -26,6 +26,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../assets/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 // Definir tus propias variables de color
 $primary-color: #3E9BFF; // Ejemplo de color primario personalizado
 $secondary-color: #007BFF; // Ejemplo de color secundario personalizado
@@ -38,6 +45,8 @@ a {
   color: $secondary-color !important;
   font-size: 16px;
   font-family: 'Roboto-Light';
+  text-decoration: none !important;
+    border: none !important;
 }
 
 input[type="text"],
@@ -74,8 +83,8 @@ input[type="password"] {
   border-top-right-radius: 9px;
   overflow: hidden;
   margin-left: -20px;
-  margin-top: -20px;
-  width: 639px;
+  margin-right: -40px;
+    margin-top: -20px;
   vertical-align: middle;
 }
 
@@ -86,7 +95,14 @@ input[type="password"] {
 h4{
   color: $primary-color !important;
   font-size: 34px !important;
+  font-family: 'Roboto-Medium';
 }
+
+h2 {
+  color: $primary-color !important;
+  font-size: 45px !important;
+  font-family: 'Roboto-Medium';
+  }
 
 .center{
   text-align: center;
@@ -116,4 +132,72 @@ h4{
 
 .thin-text{
  font-family: 'Roboto-Light';
+}
+
+.nav-color
+{
+  color: $white-color !important;
+}
+
+
+/* Estilo para los títulos de las columnas */
+.table th {
+  font-family: 'Roboto-Medium' !important;
+  color: $secondary-color !important;
+  border-bottom: 1px solid $primary-color !important;
+font-size: 20px;
+}
+
+/* Estilo para alinear a la izquierda el contenido de las celdas de categoría y paciente */
+.table td {
+  text-align: left !important;
+  font-family: 'Roboto-Light';
+  font-size: 20px;
+  border: none;
+}
+
+.table td:hover {
+  text-align: left !important;
+  font-family: 'Roboto-Light';
+  font-size: 20px;
+  border: none;
+}
+
+.table tr:hover {
+  background-color: $secondary-color !important;
+  cursor: pointer;
+}
+
+/* Estilo para los íconos de acciones */
+.table .actions-button {
+  background: none !important;
+  /* Fondo transparente */
+  border: none !important;
+  /* Sin borde */
+  padding: 0 !important;
+  /* Sin espacio interno */
+}
+
+/* Estilo para el ícono de acciones */
+.table .actions-button i {
+  color: $secondary-color !important;
+  /* Color azul */
+}
+
+/* Estilo para el hover de los registros */
+.table tbody tr:hover {
+  background-color: $secondary-color !important;
+  /* Fondo azul en hover */
+  color: white !important;
+  /* Texto blanco en hover */
+}
+
+/* Estilo para eliminar los márgenes de los registros */
+.table tbody tr {
+  margin: 0 !important;
+}
+
+.container-custom
+{
+  padding: 50px !important;
 }
