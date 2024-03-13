@@ -1,0 +1,22 @@
+.appointments-table tbody tr {
+  height: 45px;
+}
+
+.divider {
+  border-top: 1px solid #007BFF;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.table-container {
+display: flex;
+  justify-content: center;
+}
+
+.appointments-table tbody tr:hover {
+  background-color: #3E9BFF;
+  /* Cambia el color de fondo al pasar el mouse sobre una fila */
+  cursor: pointer;
+  color:#FFFFFF !important;
+  /* Cambia el cursor al pasar el mouse sobre una fila */
+}
