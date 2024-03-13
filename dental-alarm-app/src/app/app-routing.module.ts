@@ -24,6 +24,10 @@ const routes: Routes = [
         (m) => m.AppointmentsPageModule
       ),
   },
+  {
+    path: 'lists-alarms',
+    loadChildren: () => import('./lists-alarms/lists-alarms.module').then( m => m.ListsAlarmsPageModule)
+  },
 ];
 
 @NgModule({
