@@ -1,0 +1,72 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+ion-content {
+    --background: white;
+}
+
+:root {
+    --ion-background-color: #FFFFFF;
+    /* Cambia #FFFFFF por el color que desees */
+}
+
+ion-item {
+    --background: #FFFFFF;
+    /* Cambia #FFFFFF por el color que desees */
+}
+
+ion-button {
+    background-color: #007BFF;
+    /* Color del fondo del botón */
+    width: 167px;
+    /* Ancho del botón */
+    height: 41px;
+    /* Alto del botón */
+    font-family: "Roboto", sans-serif;
+    /* Tipo de fuente */
+    font-size: 18px;
+    /* Tamaño de la fuente */
+    font-weight: 400;
+    /* Grosor de la fuente */
+}
+
+ion-input {
+    font-size: 25px;
+    /* Tamaño de la fuente */
+    font-family: "Roboto", sans-serif;
+    /* Tipo de fuente */
+    font-weight: 400;
+    /* Grosor de la fuente */
+    color: rgba(0, 0, 0, 0.5);
+    /* Color de texto con opacidad del 50% */
+    border-style: none none solid none;
+    /* Solo borde inferior */
+    border-color: #3E9BFF;
+    /* Color del borde inferior */
+    border-width: 1px;
+    /* Ancho del borde inferior */
+}

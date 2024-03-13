@@ -1,0 +1,7 @@
+{
+  "name": "dental-alarm-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
