@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Lista de Alarmas</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/home">
+        <ion-icon slot="icon-only" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <p class="ion-text-center">
+    <ion-text class="section-text">Control de Ortodoncia</ion-text>
+  </p>
+  <p class="ion-text-center section-text">Miércoles, 10 de abril de 2024 </p>
+  <p class="ion-text-center section-text">11:00 AM</p>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        05:30 a.m.
+        <p>
+          Alarma 1
+        </p>
+      </ion-label>
+      <ion-buttons slot="end">
+        <ion-button class="ion-icon" size="small" fill="clear">
+          <ion-icon slot="icon-only" name="create" color="primary"></ion-icon>
+        </ion-button>
+        <ion-button class="ion-icon">
+          <ion-icon name="trash-outline" color="danger"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+    <ion-item>
+      <ion-label>07:30 a.m.
+        <p>
+          Alarma 2
+        </p>
+      </ion-label>
+      <ion-buttons slot="end">
+        <ion-button class="ion-icon">
+          <ion-icon slot="icon-only" name="create" color="primary"></ion-icon>
+        </ion-button>
+        <ion-button class="ion-icon">
+          <ion-icon name="trash-outline" color="danger"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+    <ion-item>
+      <ion-label>05:30 a.m.
+        <p>
+          Alarma 3
+        </p>
+      </ion-label>
+      <ion-buttons slot="end">
+        <ion-button class="ion-icon">
+          <ion-icon slot="icon-only" name="create" color="primary"></ion-icon>
+        </ion-button>
+        <ion-button class="ion-icon">
+          <ion-icon name="trash-outline" color="danger"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-row class="ion-justify-content-center" style="margin-top: 5rem;">
+    <ion-button color="primary">
+      <ion-icon slot="end" name="alarm"></ion-icon>
+      <ion-label>Nueva Alarma</ion-label>
+    </ion-button>
+  </ion-row>
+</ion-content>
