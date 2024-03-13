@@ -8,32 +8,43 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+<br>
+<br><br>
+<ion-content style="align-items: center;">
+  <div class="table-container ">
+    <table class="appointments-table">
+      <tbody>
+        <tr *ngFor="let appointment of appointments" style="height: 45px; font-size: 14px; opacity: 0.5;" id="row">
+          <td style="padding-right: 10px;">{{ appointment.categoria }}</td>
+          <td [style.color]="appointment.estadoColor" style="padding-right: 10px;">{{ appointment.estado }}</td>
+          <td>{{ appointment.fecha }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="divider"></div>
+  <div style="text-align: center;">
+    <ion-text class="ion-text-center section-title" style="font-size: 20px; color: #007BFF;">Control
+      Ortodoncia</ion-text>
 
-<ion-content>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Categoría de Cita</ion-card-title>
-      <ion-card-subtitle>Estado</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      10/04/2024 11:00
-    </ion-card-content>
-  </ion-card>
-
-  <!-- Repeat the above ion-card for the other appointments -->
-
-
-  <ion-title class="ion-text-center section-title">Control Ortodoncia</ion-title>
-  <ion-text class="ion-text-center section-text">Miércoles, 10 de abril de 2024 11:00 AM</ion-text>
-
+    <br><br>
+    <ion-text class="ion-text-center section-text" style="font-size:18px; color: #000000; opacity: 0.5;">Miércoles, 10
+      de abril de 2024<br> 11:00 AM</ion-text>
+    <br>
+    <br><br>
+  </div>
   <ion-row class="ion-justify-content-center">
     <ion-button routerLink="/lists-alarms" color="primary">
       <ion-icon slot="start" name="alarm"></ion-icon>
       Ver alarmas
+      <ion-icon slot="end" name="alarm"></ion-icon>
     </ion-button>
-    <ion-button color="danger">
-      <ion-icon slot="start" name="close-circle"></ion-icon>
-      Cancelar cita
+  </ion-row>
+
+  <ion-row class="ion-justify-content-center">
+    <ion-button color="danger" class="custom-button" style="border-radius: 15px; width: 194px; height: 41px;">
+      Cancelar Cita
+      <ion-icon slot="end" name="close-circle"></ion-icon>
     </ion-button>
   </ion-row>
 </ion-content>

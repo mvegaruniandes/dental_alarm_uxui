@@ -12,7 +12,7 @@ import { AppointmentsPage } from './appointments.page';
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,
+    IonicModule.forRoot(), // Añade .forRoot() aquí
     AppointmentsPageRoutingModule,
   ],
   declarations: [AppointmentsPage],
