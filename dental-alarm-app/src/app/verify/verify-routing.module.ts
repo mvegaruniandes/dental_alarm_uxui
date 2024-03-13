@@ -5,7 +5,7 @@ import { VerifyPage } from './verify.page';
 
 const routes: Routes = [
   {
-    path: 'verify',
+    path: '',
     component: VerifyPage
   }
 ];

@@ -1,13 +1,53 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>verify</ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <ion-icon name="logo-android"></ion-icon> Logo
+    </ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content class="ion-padding" class="ion-text-center" style="text-align: center;">
+  <div style="background-color: #3E9BFF; padding: 36px; height: 296px;">
+    <img src="../../assets/icon/logo-bg.png" width="147" height="153">
+    <h1 style="color: #CAE3FE; font-size: 20px; font-weight: bold;">DENTAL ALARM</h1>
+  </div>
+  <br>
+  <h2 style="color: #007BFF; font-size: 32px; font-weight: normal;">Valida tu identidad</h2>
+  <br>
+  <br>
+  <ion-row style="justify-content: center;">
+    <ion-col size="3">
+      <ion-input type="tel"
+        style="font-size: 18px; opacity: 0.5; text-align: center; border: none; border-bottom: 2px solid #007BFF; padding: 8px;">
+      </ion-input>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">verify</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    </ion-col>
+    <ion-col size="3">
+      <ion-input type="tel"
+        style="font-size: 18px; opacity: 0.5; text-align: center; border: none; border-bottom: 2px solid #007BFF; padding: 10px;">
+      </ion-input>
+    </ion-col>
+    <ion-col size="3">
+      <ion-input type="tel"
+        style="font-size: 18px; opacity: 0.5; text-align: center; border: none; border-bottom: 2px solid #007BFF; padding: 10px;">
+      </ion-input>
+    </ion-col>
+    <ion-col size="3">
+      <ion-input type="tel"
+        style="font-size: 18px; opacity: 0.5; text-align: center; border: none; border-bottom: 2px solid #007BFF; padding: 10px;">
+      </ion-input>
+    </ion-col>
+  </ion-row>
+  <br>
+  <p style="font-size: 18px; color: #000000;opacity: 0.5;">Ingresa el codigo recibido</p>
+  <ion-row style="justify-content: center; align-items: center;">
+    <ion-col size="5">
+      <p style="font-size: 16px; color: #000000; opacity: 0.7; margin-left: 10px;">Recuérdame</p>
+    </ion-col>
+    <ion-col size="1">
+      <ion-checkbox style="border-radius: 50%; border: 2px solid #007BFF;"></ion-checkbox>
+    </ion-col>
+  </ion-row>
+  <div style="text-align: center;">
+    <ion-button style="border-radius: 9px; ">Iniciar Sesión</ion-button>
+  </div>
 </ion-content>
